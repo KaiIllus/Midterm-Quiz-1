@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie News | ReelRadiance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="vanta-bg" class="fixed inset-0 -z-10"></div>
+    <nav class="bg-black bg-opacity-80 backdrop-blur-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-red-500 flex items-center">
+                    <i data-feather="film" class="mr-2"></i> ReelRadiance
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-red-400 transition">Home</a>
+                    <a href="genres.html" class="hover:text-red-400 transition">Genres</a>
+                    <a href="news.html" class="hover:text-red-400 transition">News</a>
+                    <a href="cinemas.html" class="hover:text-red-400 transition">Cinemas</a>
+                    <a href="about.html" class="hover:text-red-400 transition">About</a>
+</div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20">
+        <div class="container mx-auto px-6 z-10">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Movie <span class="text-red-500">News</span></h1>
+                <p class="text-xl text-gray-300">Stay updated with the latest happenings in the world of cinema.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-black bg-opacity-70">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="news-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="http://static.photos/movie/640x360/301" alt="News Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <i data-feather="calendar" class="mr-2"></i> October 15, 2023
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Upcoming Marvel Movies in 2025</h3>
+                        <p class="text-gray-300 mb-4">Marvel Studios reveals their ambitious Phase 6 lineup including new Avengers films and X-Men introduction.</p>
+                        <a href="#" class="text-red-500 hover:text-red-400 font-medium inline-flex items-center">
+                            Read More <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="http://static.photos/movie/640x360/302" alt="News Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <i data-feather="calendar" class="mr-2"></i> October 10, 2023
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Oscar Awards Highlights</h3>
+                        <p class="text-gray-300 mb-4">Relive the most memorable moments from this year's Academy Awards ceremony.</p>
+                        <a href="#" class="text-red-500 hover:text-red-400 font-medium inline-flex items-center">
+                            Read More <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300">
+                    <img src="http://static.photos/movie/640x360/303" alt="News Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <i data-feather="calendar" class="mr-2"></i> October 5, 2023
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Box Office Top 5 This Week</h3>
+                        <p class="text-gray-300 mb-4">See which films dominated the box office this week and their worldwide earnings.</p>
+                        <a href="#" class="text-red-500 hover:text-red-400 font-medium inline-flex items-center">
+                            Read More <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black bg-opacity-90 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-500">ReelRadiance</h3>
+                    <p class="text-gray-400">Your ultimate destination for all things cinema.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Movies</a></li>
+                        <li><a href="genres.html" class="text-gray-400 hover:text-white transition">Genres</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-white transition">News</a></li>
+                        <li><a href="cinemas.html" class="text-gray-400 hover:text-white transition">Cinemas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="mail" class="mr-2"></i> contact@reelradiance.com
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="phone" class="mr-2"></i> +63 9509071058
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 ReelRadiance | Midterm Quiz #1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xff0000,
+            backgroundColor: 0x111111
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
